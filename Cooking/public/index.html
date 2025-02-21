@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Кулинарный сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h1>Выберите кухню</h1></div>
+        <div class="cuisine-grid" id="cuisines"></div>
+    </div>
+    <script src="db.js"></script>
+    <script src="script.js"></script>
+    <script>
+        if (document.querySelector('#cuisines')) {
+        console.log('Количество кухонь:', cuisines.length);
+
+        cuisines.forEach(cuisine => {
+            console.log('Добавляем кухню:', cuisine.name); 
+        });
+    }
+    </script>
+</body>
+</html>

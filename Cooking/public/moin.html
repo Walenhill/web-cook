@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Все рецепты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="filters">
+            <div class="filter-group">
+                 <label>Кухня:</label>
+                <select id="cuisineFilter">
+                    <option value="all">Все</option>
+                    <option value="1">Азиатская</option>
+                    <option value="2">Европейская</option>
+                    <option value="3">Восточная</option>
+                    <option value="4">Итальянская</option>
+                    <option value="5">Западная</option>
+                    <option value="6">Аниме</option>
+                </select> 
+            </div>
+
+            <div class="filter-group">
+                <label>Время:</label>
+                <select id="timeFilter">
+                    <option value="all">Любое</option>
+                    <option value="30">До 30 мин</option>
+                    <option value="60">До 1 часа</option>
+                    <option value="120">До 2 часов</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Сложность:</label>
+                <select id="difficultyFilter">
+                    <option value="all">Любая</option>
+                    <option value="1">Легко</option>
+                    <option value="2">Средне</option>
+                    <option value="3">Сложно</option>
+                </select>
+            </div>
+
+            <button class="reset-filters">Сбросить</button>
+        </div>
+        <a href="index.html" class="back-button">← Назад</a>
+        <div id="recipes" class="recipes-grid"></div>
+    </div>
+    <script src="db.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

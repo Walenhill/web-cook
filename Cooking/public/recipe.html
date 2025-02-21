@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Рецепт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-detail">
+            <h1 id="recipe-title"></h1>
+            <img id="recipe-image" class="detail-image">
+            
+            <div class="meta-info">
+                <span>🕒 <span id="recipe-time"></span> мин</span>
+                <span>⚡ Сложность: <span id="recipe-difficulty"></span></span>
+                <span>🍽️ <span id="recipe-type"></span></span>
+            </div>
+
+            <div class="ingredients-section">
+                <h2>Ингредиенты</h2>
+                <ul id="recipe-ingredients"></ul>
+            </div>
+
+            <div class="steps-section">
+                <h2>Приготовление</h2>
+                <ol id="recipe-steps"></ol>
+            </div>
+
+            <a href="moin.html" class="back-button">← Назад</a>
+        </div>
+    </div>
+    <script src="db.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
